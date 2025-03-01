@@ -1,0 +1,57 @@
+/* Contact Page Container */
+.contact-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 80px auto 50px; /* Margin from top to avoid overlapping with navbar */
+    padding: 2rem;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Heading */
+.contact-container h2 {
+    color: #1e90ff;
+}
+
+/* Paragraph */
+.contact-container p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Input Fields */
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Submit Button */
+.contact-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #1c7ed6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        width: 90%;
+    }
+}

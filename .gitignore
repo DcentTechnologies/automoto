@@ -1,0 +1,12 @@
+# Back End
+backend/.env
+backend/node_modules/*
+backend/package-lock.json
+backend/uploads/*
+# Front End
+frontend/node_modules/*
+frontend/package-lock.json
+frontend/.env
+# Mobile App
+MobileApp/node_modules/*
+MobileApp/package-lock.json

@@ -1,0 +1,97 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #1e90ff;
+    padding: 1rem;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo */
+  .navbar-logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Hamburger Menu (Hidden on Desktop) */
+  .hamburger {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  
+  /* Navbar Links */
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Login/Signup Buttons */
+  .navbar-buttons .btn {
+    color: #1e90ff;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .navbar-buttons .signup-btn {
+    background-color: #ffcc00;
+    color: black;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      background-color: #1e90ff;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 1rem 0;
+    }
+  
+    .navbar-links.open {
+      display: flex;
+    }
+  
+    .navbar-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

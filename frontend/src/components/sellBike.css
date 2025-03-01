@@ -1,0 +1,57 @@
+.sell-bike-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.sell-bike-container h2 {
+    color: #1e90ff;
+}
+
+.sell-bike-container input,
+.sell-bike-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sell-bike-container textarea {
+    height: 100px;
+}
+
+.image-upload {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.image-upload label {
+    font-weight: bold;
+}
+
+.image-preview {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.sell-bike-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sell-bike-container button:hover {
+    background-color: #1c7ed6;
+}
