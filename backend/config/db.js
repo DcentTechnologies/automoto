@@ -3,7 +3,7 @@ File: /backend/config/db.js
 Usage: Create a connection with Mongo Database
 */
 
-import mongoose from 'mongoo';
+import mongoose from 'mongoose';
 
 const connectDB = async () => {
     try {
