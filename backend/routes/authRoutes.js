@@ -83,7 +83,7 @@ router.get("/google/callback",
                 await user.save();
             }
     const token = jwt.sign({ id: req.user._id }, process.env.JWT_SECRET, { expiresIn: "1d" });
-    res.redirect(`http://localhost:3000/login-success?token=${token}`);
+    res.redirect(`https://localhost:3000/login-success?token=${token}`);
   } catch (error) {
     res.status(500).json({ message: error.message });
 }}
@@ -95,8 +95,8 @@ router.get("/facebook", passport.authenticate("facebook", { scope: ["email"] }))
 router.get("/facebook/callback",
   passport.authenticate("facebook", { session: false }),
   (req, res) => {
-    const token = jwt.sign({ id: req.user._id }, process.env.JWT_SECRET, { expiresIn: "7d" });
-    res.redirect(`http://localhost:3000/login-success?token=${token}`);
+    const token = jwt.sign({ id: req.user._id }, process.env.JWT_SECRET, { expiresIn: "1d" });
+    res.redirect(`https://localhost:3000/login-success?token=${token}`);
   }
 );
 
