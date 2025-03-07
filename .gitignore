@@ -1,5 +1,5 @@
 # Back End
-backend/.env
+# backend/.env
 backend/node_modules/*
 backend/package-lock.json
 # Front End
